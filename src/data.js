@@ -1,9 +1,6 @@
 // estas funciones son de ejemplo
 
-export const example = () => {
-  return 'example';
-};
+function Pokemon(filterPokemon){
+  const filtrar = 
 
-export const anotherExample = () => {
-  return 'OMG';
-};
+}
