@@ -1,30 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-   <div class="container">
-    <center><h1 class="title"> BIENVENIDOS AL MUNDO </h1></center>
-    <img class="img1" src="./imagen/cielo.jpg" alt="">
-    <img class="img2" src="./imagen/Pokemon.png" alt="">
-    <img class="img3" src="./imagen/ash.jpeg" alt="Pokemon juntos"> 
+
+<head>
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  
+  <header>
+    <section class="filterPokemons">
+      <select id="type" class="type">
+        <option>Pokemon por su Tipo</option>
+        <option value="normal" selected>Normal</option>
+        <option value="fire" selected>Fire</option>
+        <option value="fighting" selected>Fighting</option>
+        <option value="water" selected>Water</option>
+        <option value="flying" selected>Flying</option>
+        <option value="grass" selected>Grass</option>
+        <option value="poison" selected>Poison</option>
+        <option value="electric" selected>Electric</option>
+        <option value="ground" selected>Ground</option>
+        <option value="psychic" selected>Psychic</option>
+        <option value="rock" selected>Rock</option>
+        <option value="ice" selected>Ice</option>
+        <option value="bug" selected>Bug</option>
+        <option value="dragon" selected>Dragon</option>
+        <option value="ghost" selected>Ghost</option>
+        <option value="dark" selected>Dark</option>
+        <option value="steel" selected>Steel</option>
+        <option value="fairy" selected>Fairy</option>
+      </select>
+  </header>
+
+  <div id="root">
   </div>
-   <main>
-    <form action="" id="form">
-      <strong><label for="look-Fo" class="seeker">Buscar tipo de Pokemon</label></strong>
-      <input type="text" placeholder="eje. Pokemon de agua" id="seekerPokemon">
-      <button type="button" id="btnSeeker">Buscar</button>
-    </form>
-    <p>
-      Gracias por visitar mundo Pokemon, aqui podras encontrar Pokemon de la region de Kanto y Johto.
-      Ingresas en el buscador el tipo de Pokemon que buscas y se desplegara un listado de todos los Pokemon de este tipo que busques, podras elegir el de tu preferencia y conocer sus caracteristicas.
-      Puedes ingresar top 10 de apariciones para saber que Pokemon podras encontar mas facilmente 
-    </p>
-   </main>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>

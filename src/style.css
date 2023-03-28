@@ -1,7 +1,7 @@
 *{
-  margin: 0%;
+  margin: 1%;
   padding: 0%;
-  border: 0%;
+  box-sizing: border-box;
 }
 
 .img1{
@@ -20,12 +20,11 @@
   margin-right: auto;
   padding: 60px;
 }
-
 .img3{
   width: 40%;
-  position: absolute;
+  position: block;
   margin-left: 58%;
-  margin-top: 50px;
+  margin-top: 1%;
 
 }
 
@@ -62,10 +61,17 @@ button{
 p{
   width: 50%;
   position:absolute;
+  margin-top: -20px;
   margin-left: 3%;
-  padding-top: 10%;
   text-align: justify;
   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#root{
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  position: relative;
 }
 
 
