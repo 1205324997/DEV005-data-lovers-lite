@@ -1,8 +1,9 @@
 import data from './data/pokemon/pokemon.js';
-import { filterPokemon } from './data.js';
+import { filterPokemon, sortOrder, reverOrder, regionPokemon} from './data.js';
 
-
-
+console.log(regionPokemon(data.pokemon, "kanto"));
+//console.log(sortOrder(data.pokemon));
+//console.log(reverOrder(data.pokemon));
 
 function makeHtmlPokemons(allData) {
   const root = document.getElementById("root")
@@ -34,8 +35,28 @@ typePokemon.addEventListener("change", (event) => {
   }
 });
 
-// aqui empieza el sort
-//
+const regionfilterPokemon = document.getElementById("region")
+regionfilterPokemon.addEventListener("change", (e) => {
+  const selectRegion = e.target.value
+  if(selectRegion){
+    const filterRegion = regionPokemon(data.pokemon, selectRegion);
+    makeHtmlPokemons(filterRegion)
+  }
+})
 
+const orderPokemon = document.getElementById("order")
+orderPokemon.addEventListener("change", (event)=>{
+  const orderSelect = event.target.value
+  if(orderSelect === "A-Z"){
+    const filterSortAZ = sortOrder(data.pokemon, orderSelect)
+    makeHtmlPokemons(filterSortAZ);
+  }
+  if(orderSelect === "Z-A"){
+    const filterSortAZ = reverOrder(data.pokemon, orderSelect)
+    makeHtmlPokemons(filterSortAZ);
+  }
+})
 // muestra los pokemons de la data original en mi linea html
 makeHtmlPokemons(data.pokemon)
+
+
