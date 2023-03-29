@@ -8,9 +8,12 @@
 </head>
 
 <body>
+  <p>BIENVENIDO A MUNDO</p>
+  <img class="img1" src="./imagen/cielo.jpg" alt="">
+  <img class="img2" src="./imagen/Pokemon.png" alt="">
 
   <header>
-    <section class="filterPokemons">
+    <div class="filterPokemons">
       <select id="type" class="type">
         <option>Pokemon por su Tipo</option>
         <option value="normal" selected>Normal</option>
@@ -44,8 +47,10 @@
         <option value="A-Z">Nombres A-Z</option>
         <option value="Z-A">Nombres Z-A</option>
       </select>
-    </section>
+    </div>
   </header>
+
+  <div id="containerPokemons"></div>
 
   <div id="root">
   </div>
