@@ -9,8 +9,7 @@
 * 5. Criterios de aceptación mínimos del proyecto
 * 6. Prototipo de baja fidelidad
 * 7. Prototipo de alta fidelidad
-* 8. Diseño de experiencia de usuario (User Experience Design)
-* 9. Diseño visual
+* 8. Diseño visual
 ***
 
 # 1. Preámbulo
@@ -51,11 +50,12 @@ se realizaron prototipos de alta y baja fidelidad para poder recibir feedback y 
 Este proyecto se realizo con la finalidad de que los usuarion amantes de los Pokemon puedan entrar a esta pagina, encontrar y las caracteristicas que estan buscando.
 
 # 6. Prototipo de baja fidelidad
+![img20230329_17293674](https://user-images.githubusercontent.com/122817494/228697536-60092b3c-fc7c-4848-b8c8-571dddd0bf78.jpg)
 
 # 7. Prototipo de alta fidelidad
-
-# 8. Diseño de experiencia de usuario 
-
+![Mundo Pokemon](https://user-images.githubusercontent.com/122817494/228697705-ade3bd4f-7c06-47f6-aa9c-10e709c2f1cd.png)
+![Untitled](https://user-images.githubusercontent.com/122817494/228697783-02d07a8e-6308-4d15-baa7-0e7e5fe50e04.png)
+![Bloque final](https://user-images.githubusercontent.com/122817494/228697798-a426ff92-bf67-4590-9d22-5ff7124e050e.png)
 # 9. Diseño visual
 Es proyecto se trabajo para que sea adactable a cualquier devices al que tengan acceso, y con un diseño visaul facil de entender.
 
