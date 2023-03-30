@@ -2,7 +2,7 @@
 
 ## Índice
 
-* 1. [Preámbulo]
+* 1. Preámbulo
 * 2. Resumen del proyecto
 * 3. Objetivos de aprendi0zaje
 * 4. Consideraciones generales
