@@ -43,7 +43,7 @@ se realizaron prototipos de alta y baja fidelidad para poder recibir feedback y 
 
 # 4. Consideraciones generales
 
- Aqui puedes vivistar la pagina: 
+ Aqui puedes vivistar la pagina: https://1205324997.github.io/DEV005-data-lovers-lite/src/
 
 # 5. Criterios de aceptación mínimos del proyecto
 
