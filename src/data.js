@@ -1,6 +1,6 @@
 export const filterPokemon = (data, pokemonType) => {
   // aqui escribes el filtrado
-  return data.filter(item => item.type.includes(pokemonType.toLowerCase()));
+  return data.filter(item => item.type.includes(pokemonType));
 // aqui retornas el resultado de los pokemones filtrados
 };
 

@@ -69,7 +69,6 @@ background-color: #95e2faee;
 
 #order{
   background-color: #fdf597f1;
-  
 }
 
 select {
@@ -86,18 +85,15 @@ select {
 section {
   padding: 2% 3% 2%;
   background-color: #aff8db77;
-
 }
 
 section:hover {
   background-color: rgba(199, 44, 16, 0.19);
   padding: 4% 6% 4%;
-  border-radius: 5px;
-  
-
+  border-radius: 5px; 
 }
 
-p {
+#title{
   padding: 5px;
   width: 100%;
   color: rgb(255, 255, 255);
@@ -107,15 +103,6 @@ p {
   text-shadow: 3px 3px 3px black;
   position: absolute;
   text-align: center;
-}
-
-a {
-  width: 50%;
-  position: absolute;
-  margin-top: -20px;
-  margin-left: 3%;
-  text-align: justify;
-  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #root {
@@ -128,3 +115,9 @@ a {
   top: -60px;
 }
 
+footer{
+  margin: 20px;
+  font-size: 1.20em;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
