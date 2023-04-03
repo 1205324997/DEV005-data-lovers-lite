@@ -74,6 +74,7 @@ background-color: #95e2faee;
 
 select {
   margin: 2%;
+  height: 25%;
   border-radius: 5px;
   font-family: 'Courier New', Courier, monospace;
   font-size: 1.0em;

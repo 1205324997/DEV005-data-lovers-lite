@@ -70,13 +70,6 @@ search.addEventListener("keyup", (e) =>{
   makeHtmlPokemons(pokemonsSearch)
 });
 
-const searchType = document.getElementById("searchBtn")
-searchType.addEventListener("keyup", (e) =>{
-  const searchPokemontype = e.target.value;
-  const searchType = filterPokemon(data.pokemon, searchPokemontype);
-  makeHtmlPokemons(searchType)
-})
-
 // muestra los pokemons de la data original en mi linea html
 makeHtmlPokemons(data.pokemon);
 
