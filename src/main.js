@@ -11,22 +11,37 @@ function makeHtmlPokemons(allData) {
 
   allData.forEach((pokemones) => {//Realiamos el recorrido de la data
     const section = document.createElement("section");//creamos un nuevo elemento para guardar los datos obtenidos
+    const advContainer = document.createElement("div");
+    const basicContainer = document.createElement("div");
     const subtitle = document.createElement("h2");
     const imgPokemon = document.createElement("img");
     const type = document.createElement("h3");
     const num = document.createElement("h1");
+    const weaknesses = document.createElement("h3");
+    const height = document.createElement("h3");
+    const weight = document.createElement("h3");
 
     type.textContent = pokemones.type.join(" - ");// cambiamos el contenido por el dato y le agrego un guion para que separe los nombres
     num.textContent = pokemones.num
     subtitle.textContent = pokemones.name.toUpperCase();//cambiamos de minuscula a mayuscula
     imgPokemon.setAttribute('src', pokemones.img);
+    weaknesses.textContent = pokemones.weaknesses;
+    height.textContent = pokemones.size.height;
+    weight.texContent = pokemones.size.weight;
 
-    section.appendChild(num)//agregamos a section los valores obtenidos con textContent
-    section.appendChild(imgPokemon);
-    section.appendChild(subtitle);
-    section.appendChild(type);
+    basicContainer.appendChild(num)//agregamos a section los valores obtenidos con textContent
+    basicContainer.appendChild(imgPokemon);
+    basicContainer.appendChild(subtitle);
+    basicContainer.appendChild(type);
+    advContainer.appendChild(imgPokemon)
+    advContainer.appendChild(weaknesses);
+    advContainer.appendChild(height)
+    advContainer.appendChild(weight)
+    section.appendChild(basicContainer);
+    section.appendChild(advContainer);
     root.appendChild(section);
   })
+
 }
 
 const typePokemon = document.getElementById("type");
