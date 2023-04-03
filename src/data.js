@@ -1,11 +1,15 @@
 export const filterPokemon = (data, pokemonType) => {
   // aqui escribes el filtrado
-  return data.filter(item => item.type.includes(pokemonType));
+  return data.filter(item => item.type.includes(pokemonType.toLowerCase()));
 // aqui retornas el resultado de los pokemones filtrados
 };
 
 export const regionPokemon = (data, pokemonRegion) => {
   return data.filter(item => item.generation.name.includes(pokemonRegion));
+};
+
+export const namePokemon = (data, pokemonName) => {
+  return data.filter(item => item.name.includes(pokemonName.toLowerCase()));
 };
   
 

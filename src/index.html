@@ -8,11 +8,16 @@
 </head>
 
 <body>
-  <p>BIENVENIDO A MUNDO</p>
-  <img class="img1" src="./imagen/cielo.jpg" alt="">
-  <img class="img2" src="./imagen/Pokemon.png" alt="">
-
   <header>
+    <p>BIENVENIDO A MUNDO</p>
+    <img class="img1" src="./imagen/cielo.jpg" alt="Cielo">
+    <img class="img2" src="./imagen/Pokemon.png" alt="Pokemon">
+  </header>
+   <main>
+    <div id="btnSearch">
+    <input type="search" placeholder="Buscar..." id="searchBtn">
+  </div>
+
     <div class="filterPokemons">
       <select id="type" class="type">
         <option>Pokemon por su Tipo</option>
@@ -48,12 +53,11 @@
         <option value="Z-A">Nombres Z-A</option>
       </select>
     </div>
-  </header>
+  </main>
 
-  <div id="containerPokemons"></div>
-
-  <div id="root">
-  </div>
+    <div id="root"></div>
+    <div id="reverCard"></div>
+    
   <script src="main.js" type="module"></script>
 </body>
 

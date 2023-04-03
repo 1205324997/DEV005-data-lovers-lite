@@ -1,4 +1,4 @@
-import { filterPokemon, regionPokemon, sortOrder, reverOrder } from '../src/data.js';
+import { filterPokemon, namePokemon, regionPokemon, sortOrder, reverOrder } from '../src/data.js';
 
 const typePokemon = [{
   "type": [
@@ -6,7 +6,7 @@ const typePokemon = [{
   ],
 }];
 
-describe('Deberia mostrar los pokemon por tipo', () => {
+describe('deberia de retornar un array de objetos por "type:[grass]"', () => {
   test('Es una function', () => {
     expect(typeof filterPokemon).toBe('function');
   });
@@ -16,6 +16,20 @@ describe('Deberia mostrar los pokemon por tipo', () => {
   });
 });
 
+const name1 =[{
+  "name": "ivysaur"
+}];
+
+describe('deberia de retornar un array de objetos por nombre "ivysaur"', () => {
+  test('Es una function', () => {
+    expect(typeof namePokemon).toBe('function');
+  });
+
+  test('Deberia retornarme los pokemon por name', () => {
+    expect(namePokemon(name1, "ivysaur")).toEqual(name1);
+    
+  });
+});
 
 
 const regionPokemo = [{

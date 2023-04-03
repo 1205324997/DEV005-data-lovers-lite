@@ -1,5 +1,5 @@
 import data from './data/pokemon/pokemon.js';
-import { filterPokemon, sortOrder, reverOrder, regionPokemon } from './data.js';
+import { filterPokemon, namePokemon, sortOrder, reverOrder, regionPokemon } from './data.js';
 
 //console.log(regionPokemon(data.pokemon, "kanto"));
 //console.log(sortOrder(data.pokemon));
@@ -13,12 +13,18 @@ function makeHtmlPokemons(allData) {
     const section = document.createElement("section");
     const subtitle = document.createElement("h2");
     const imgPokemon = document.createElement("img");
+    const type = document.createElement("h3");
+    const num = document.createElement("h1");
 
-    subtitle.textContent = pokemones.name;
+    type.textContent = pokemones.type.join(" - ");
+    num.textContent = pokemones.num
+    subtitle.textContent = pokemones.name.toUpperCase();
     imgPokemon.setAttribute('src', pokemones.img);
 
+    section.appendChild(num)
     section.appendChild(imgPokemon);
     section.appendChild(subtitle);
+    section.appendChild(type)
     root.appendChild(section)
   })
 }
@@ -57,10 +63,22 @@ orderPokemon.addEventListener("change", (event) => {
   }
 })
 
+const search = document.getElementById("searchBtn")
+search.addEventListener("keyup", (e) =>{
+  const searchPokemon = e.target.value;
+  const pokemonsSearch = namePokemon(data.pokemon, searchPokemon)
+  makeHtmlPokemons(pokemonsSearch)
+});
+
+const searchType = document.getElementById("searchBtn")
+searchType.addEventListener("keyup", (e) =>{
+  const searchPokemontype = e.target.value;
+  const searchType = filterPokemon(data.pokemon, searchPokemontype);
+  makeHtmlPokemons(searchType)
+})
 
 // muestra los pokemons de la data original en mi linea html
 makeHtmlPokemons(data.pokemon);
-
 
 
 
