@@ -29,6 +29,7 @@ hacerlo es creando _interfaces_ y _visualizaciones_.
 En este proyecto **construiremos una _página web_ para visualizar un
 _conjunto de datos_** que se adecúe a lo que nuestro usuario necesite.
 
+
 Esta pagina le ayudara al usuario interctuar con una lista de Pokemon de la region de Kanto y Johto, los cuales los podran buscar por tipo de pokemon, region a la que pertenecen o en orden alfabetico decendente o acendente, de una manera facil y rapida. 
 
 # 3. Objetivos de aprendizaje
@@ -43,7 +44,7 @@ se realizaron prototipos de alta y baja fidelidad para poder recibir feedback y 
 
 # 4. Consideraciones generales
 
- Aqui puedes vivistar la pagina: https://1205324997.github.io/DEV005-data-lovers-lite/src/
+ Aqui puedes vivistar la pagina:https://1205324997.github.io/DEV005-data-lovers-lite/src/
 
 # 5. Criterios de aceptación mínimos del proyecto
 
@@ -60,4 +61,5 @@ Este proyecto se realizo con la finalidad de que los usuarion amantes de los Pok
 
 # 9. Diseño visual
 Es proyecto se trabajo para que sea adactable a cualquier devices al que tengan acceso, y con un diseño visaul facil de entender.
+![Sin título](https://user-images.githubusercontent.com/122817494/229387692-9f325434-9eb4-4122-bc03-13c5785e9997.png)
 
