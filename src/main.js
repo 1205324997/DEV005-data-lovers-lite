@@ -11,35 +11,58 @@ function makeHtmlPokemons(allData) {
 
   allData.forEach((pokemones) => {//Realiamos el recorrido de la data
     const section = document.createElement("section");//creamos un nuevo elemento para guardar los datos obtenidos
-    const advContainer = document.createElement("div");
+    const advContainer = document.createElement("article");
     const basicContainer = document.createElement("div");
     const subtitle = document.createElement("h2");
+    const imgPokemon2 = document.createElement("img");
     const imgPokemon = document.createElement("img");
-    const type = document.createElement("h3");
+    const type = document.createElement("h4");
+    const type1 = document.createElement("h3");
     const num = document.createElement("h1");
     const weaknesses = document.createElement("h3");
     const height = document.createElement("h3");
     const weight = document.createElement("h3");
+    const region = document.createElement("h3")
+    const close = document.createElement("button");
 
+
+    close.textContent = 'X'
+    region.textContent = 'Region: ' + pokemones.generation.name.charAt(0).toUpperCase() + pokemones.generation.name.slice(1);
     type.textContent = pokemones.type.join(" - ");// cambiamos el contenido por el dato y le agrego un guion para que separe los nombres
+    type1.textContent = 'Tipo: ' + pokemones.type.join(" - ");
     num.textContent = pokemones.num
-    subtitle.textContent = pokemones.name.toUpperCase();//cambiamos de minuscula a mayuscula
+    subtitle.textContent = pokemones.name.charAt(0).toUpperCase() + pokemones.name.slice(1);//cambiamos de minuscula a mayuscula
     imgPokemon.setAttribute('src', pokemones.img);
-    weaknesses.textContent = pokemones.weaknesses;
-    height.textContent = pokemones.size.height;
-    weight.texContent = pokemones.size.weight;
+    imgPokemon2.setAttribute('src', pokemones.img);
+    weaknesses.textContent = 'Debilidades: ' + pokemones.weaknesses.join(' - ');
+    height.textContent = 'Altura: ' + pokemones.size.height;
+    weight.texContent = 'Peso: ' + pokemones.size.weight;
 
     basicContainer.appendChild(num)//agregamos a section los valores obtenidos con textContent
     basicContainer.appendChild(imgPokemon);
     basicContainer.appendChild(subtitle);
     basicContainer.appendChild(type);
-    advContainer.appendChild(imgPokemon)
+    advContainer.appendChild(close);
+    advContainer.appendChild(imgPokemon2);
     advContainer.appendChild(weaknesses);
-    advContainer.appendChild(height)
-    advContainer.appendChild(weight)
+    advContainer.appendChild(type1)
+    advContainer.appendChild(height);
+    advContainer.appendChild(weight);
+    advContainer.appendChild(region);
     section.appendChild(basicContainer);
     section.appendChild(advContainer);
     root.appendChild(section);
+    
+    advContainer.style.display = "none";
+    basicContainer.addEventListener("click", () =>{
+      basicContainer.style.display = "none";
+      advContainer.style.display = "block";
+
+      close.addEventListener("click", () => {
+        advContainer.style.display = "none";
+        basicContainer.style.display = "block"
+      })
+    })
   })
 
 }

@@ -54,21 +54,26 @@ h2{
   font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
-h3{
+h4{
   font-size: 1.0em;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h3{
+  font-size: 1.10em;
+  
 }
 
 #type{
-  background-color: #fdc1edf1;
+  background-color: #cfffca;
 }
 
 #region{
-background-color: #95e2faee;
+background-color:#fdfd96;
 }
 
 #order{
-  background-color: #fdf597f1;
+  background-color: #c7f7f7 ;
 }
 
 select {
@@ -88,8 +93,15 @@ section {
 }
 
 section:hover {
-  background-color: rgba(199, 44, 16, 0.19);
+  background-color: rgba(69, 114, 205, 0.19);
   border-radius: 5px; 
+}
+
+
+button{
+  width: 20px;
+  height: 20px;
+  position: absolute;
 }
 
 #title{
