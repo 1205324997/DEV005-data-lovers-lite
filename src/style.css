@@ -4,7 +4,7 @@
 }
 
 body {
-  
+  width: 100%;
   text-align: center;
   background-image: url(./imagen/fonfo.jpg);
 }
@@ -81,14 +81,18 @@ select {
   height: 25%;
   border-radius: 5px;
   font-family: 'Courier New', Courier, monospace;
-  font-size: 1.0em;
+  font-weight: bolder;
+  font-size: 1.10em;
   padding: 0.2em 1.5em 0.2em;
   position: relative;
   top: -50px;
 }
 
 section {
-  padding: 2% 3% 2%;
+  padding: 7px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
   background-color: #aff8db77;
 }
 
@@ -97,11 +101,19 @@ section:hover {
   border-radius: 5px; 
 }
 
+article{
+  padding: 7px;
+}
 
 button{
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   position: absolute;
+  background-color: rgb(247, 26, 26);
+  border: solid 1px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.20em;  
+  font-weight: bolder;
 }
 
 #title{
@@ -117,18 +129,17 @@ button{
 }
 
 #root {
-  margin: 20px;
+  margin: 15px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
-  position: relative;
-  top: -60px;
+  gap: 40px;
+  margin-top: -25px;
+  
 }
 
 footer{
   margin: 20px;
-  font-size: 1.20em;
-  font-family: 'Times New Roman', Times, serif;
-  
+  font-size: 0.80em;
+  font-family: 'Times New Roman', Times, serif;  
 }
